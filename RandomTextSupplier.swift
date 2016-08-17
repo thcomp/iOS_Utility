@@ -30,7 +30,7 @@ public class RandomTextSupplier{
         }
         
         let arrayCount = providerArray.count;
-        for var i:Int=0; i<length; i++ {
+        for _:Int in 0 ..< length {
             var randomValue: Int = 0;
             arc4random_buf(&randomValue, sizeof(Int));
             if randomValue < 0 {
